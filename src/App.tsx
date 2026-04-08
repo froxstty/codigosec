@@ -143,6 +143,11 @@ export default function App() {
               href={checkoutLink}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => {
+                if (typeof (window as any).fbq === 'function') {
+                  (window as any).fbq('track', 'InitiateCheckout');
+                }
+              }}
               className="block w-full text-center bg-gradient-to-br from-[#1b4332] to-[#0a2318] text-white font-black text-xl md:text-2xl py-5 rounded-2xl shadow-[0_10px_20px_rgba(27,67,50,0.3)] hover:shadow-[0_15px_30px_rgba(27,67,50,0.4)] transition-all"
             >
               SIM! QUERO MEU ACESSO COM 80% OFF
