@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Clock, Shield, CheckCircle, ChevronRight, Menu, Check } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Clock, Shield, Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 import bonus1 from './assets/b1.png';
